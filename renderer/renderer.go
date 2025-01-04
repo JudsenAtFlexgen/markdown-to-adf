@@ -403,6 +403,9 @@ func (r *ADFRenderer) walkNode(source []byte, node ast.Node, entering bool) ast.
 		// 	}
 		// }
 		// return ast.WalkSkipChildren
+	case *extAst.TaskCheckBox:
+		// if entering {
+		// }
 	default:
 		panic("unknown type " + n.Kind().String())
 	}
